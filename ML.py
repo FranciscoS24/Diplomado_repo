@@ -1,5 +1,4 @@
 # Define the Streamlit app content and save it to app.py
-streamlit_app_content = 
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -27,7 +26,3 @@ pred = model.predict([[valor]])[0]
 st.success(f"Predicción del modelo: {pred:.2f}")
 
 
-with open("app.py", "w") as f:
-    f.write(streamlit_app_content)
-
-print("app.py created successfully.")
